@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Collection | HLA Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(227, 226, 227);
+            color: black;
+        }
+
+        header {
+            background-color: rgb(195, 177, 153);
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 10px 0;
+            font-size: 3rem;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(237, 233, 226);
+            color: gray;
+            border-color: rgb(213, 203, 207);
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .accessories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .accessory-item {
+            max-width: 300px;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .accessory-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .accessory-item h3 {
+            font-size: 1.5rem;
+            color: black;
+            margin: 10px 0;
+        }
+
+        .accessory-item p {
+            font-size: 1rem;
+            color: gray;
+            margin: 5px 0;
+        }
+
+        .accessory-item button {
+            background-color: rgb(195, 177, 153);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .accessory-item button:hover {
+            background-color: rgb(173, 155, 134);
+        }
+
+        #cart {
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        #cart h3 {
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        #cart ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer {
+            background-color: gray;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="F:\HLA STORE\HLA (1).png" alt="HLA Store Logo">
+        <h1>HLA Store</h1>
+        <p>Dare to Be Different</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="watches.html">Watches</a></li>
+                <li><a href="jewelry.html">Jewelery</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Accessories</h2>
+        <div class="accessories">
+            <div class="accessory-item">
+                <img src="F:\HLA STORE\wallets.webp" alt="Accessory 1">
+                <h3>Leather Wallet</h3>
+                <p>Price: $99</p>
+                <p>Material: Premium Leather</p>
+                <button onclick="addToCart('Leather Wallet', 99)">Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="F:\HLA STORE\scarf.jpg" alt="Accessory 2">
+                <h3>Silk Scarf</h3>
+                <p>Price: $49</p>
+                <p>Material: 100% Silk</p>
+                <button onclick="addToCart('Silk Scarf', 49)">Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="F:\HLA STORE\cufflinks.webp" alt="Accessory 3">
+                <h3>Gold-Plated Cufflinks</h3>
+                <p>Price: $199</p>
+                <p>Material: Gold Plated</p>
+                <button onclick="addToCart('Gold-Plated Cufflinks', 199)">Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="F:\HLA STORE\sunglasses.webp" alt="Accessory 4">
+                <h3>Sunglasses</h3>
+                <p>Price: $129</p>
+                <p>Material: Polarized Lenses</p>
+                <button onclick="addToCart('Sunglasses', 129)">Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src= "F:\HLA STORE\belts.avif" alt="Accessory 5">
+                <h3>Luxury Belt</h3>
+                <p>Price: $149</p>
+                <p>Material: Genuine Leather</p>
+                <button onclick="addToCart('Luxury Belt', 149)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="cart">
+        <h3>Your Cart</h3>
+        <ul id="cart-items">
+            <li>No items in the cart.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 HLA Store. All rights reserved.</p>
+    </footer>
+    <script>
+        function addToCart(itemName, itemPrice) {
+            const cartItems = document.getElementById('cart-items');
+            if (cartItems.innerHTML.includes('No items in the cart.')) {
+                cartItems.innerHTML = '';
+            }
+            const listItem = document.createElement('li');
+            listItem.textContent = `${itemName} - $${itemPrice}`;
+            cartItems.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>

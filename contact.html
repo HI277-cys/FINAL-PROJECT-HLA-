@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | HLA Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(227, 226, 227);
+            color: black;
+        }
+
+        header {
+            background-color: rgb(195, 177, 153);
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 10px 0;
+            font-size: 3rem;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(237, 233, 226);
+            color: gray;
+            border-color: rgb(213, 203, 207);
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .form-section, .table-section, .cart-section, .social-media {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form input, form textarea, form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: rgb(195, 177, 153);
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: rgb(173, 155, 134);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th, table td {
+            border: 1px solid gainsboro;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: rgb(195, 177, 153);
+            color: white;
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-media ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: gray;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .social-media ul li a:hover {
+            background-color: rgb(237, 233, 226);
+            color: gray;
+        }
+
+        .cart-section h3, .cart-section ul {
+            text-align: left;
+        }
+
+        .cart-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart-section ul li {
+            background-color: rgb(245, 245, 245);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gainsboro;
+        }
+
+        footer {
+            background-color: gray;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="F:\HLA STORE\HLA (1).png" alt="HLA Store Logo">
+        <h1>HLA Store</h1>
+        <p>Dare to Be Different</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="watches.html">Watches</a></li>
+                <li><a href="jewelry.html">Jewelery</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Contact Us</h2>
+        <div class="form-section">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="form-section">
+            <h3>Place an Order</h3>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Your Address" required>
+                <textarea placeholder="Order Details" rows="5" required></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+        <div class="table-section">
+            <h3>Pricing Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luxury Watch</td>
+                        <td>Premium minimalist design</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+                        <td>Silk Scarf</td>
+                        <td>100% silk, lightweight</td>
+                        <td>$49</td>
+                    </tr>
+                    <tr>
+                        <td>Gold-Plated Cufflinks</td>
+                        <td>Durable and elegant</td>
+                        <td>$199</td>
+                    </tr>
+                    <tr>
+                        <td>Diamond Necklace</td>
+                        <td>Exquisite diamonds with gold</td>
+                        <td>$599</td>
+                    </tr>
+                    <tr>
+                        <td>Leather Wallet</td>
+                        <td>Top-grain leather</td>
+                        <td>$99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cart-section">
+            <h3>Your Cart</h3>
+            <ul>
+                <li>Luxury Watch - $199</li>
+                <li>Gold-Plated Cufflinks - $199</li>
+                <li>Diamond Necklace - $599</li>
+                <li>Elegant Pearl Necklace - $699</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+        <div class="multimedia">
+            <h3>Our Store</h3>
+            <img src="F:\HLA STORE\HLA (1).png" alt="HLA Store">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 HLA Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
